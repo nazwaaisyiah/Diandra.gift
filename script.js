@@ -523,6 +523,20 @@ document.addEventListener('DOMContentLoaded', () => {
     });
     
     // Event listener untuk menu mobile
+    if (hamburger) {
+        hamburger.addEventListener('click', toggleMobileMenu);
+    }
+
+    // Tutup menu saat link diklik (untuk UX yang lebih baik)
+    if (navLinks) {
+        navLinks.querySelectorAll('a').forEach(link => {
+            link.addEventListener('click', () => {
+                navLinks.classList.remove('active');
+            });
+        });
+    }
+    
+    // Event listener untuk menu mobile
    function on(el, event, handler) {
     if (el) el.addEventListener(event, handler);
 }
