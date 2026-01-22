@@ -5,6 +5,12 @@
     box-sizing: border-box;
 }
 
+object {
+    width: 100%;
+    display: block;
+    border: none;
+}
+
 :root {
     --pink-pastel: #f8d7da;
     --pink-medium: #f1aeb5;
@@ -681,7 +687,7 @@ footer {
         rgba(255, 255, 255, 0.45),
         rgba(255, 255, 255, 0.45)
       ),
-      url("Assets/bungabg.jpeg"); 
+      url("../Assets/bungabg.jpeg");
 
     background-size: cover;
     background-position: center;
@@ -696,7 +702,7 @@ footer {
     color: #2f3438;
 }
 
-#ulasan
+#
 .contact-form {
     background-color: var(--white);
     padding: 2rem;

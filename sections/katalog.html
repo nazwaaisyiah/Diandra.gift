@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Diandra.gift</title>
+    <link rel="stylesheet" href="../css/style.css">
+</head>
+<body>
+<!-- Header & Navigation -->
+    <header>
+        <div class="container">
+            <nav class="navbar">
+                <a href="#" class="logo">Diandra.<span>gift</span></a>
+                <ul class="nav-links">
+                        <li><a href="home.html">Home</a></li>
+                        <li><a href="katalog.html">Katalog</a></li>
+                        <li><a href="search.html">Cari</a></li>
+                        <li><a href="tentang.html">Tentang Kami</a></li>
+                        <li><a href="kontak.html">Kontak</a></li>
+                        <li><a href="ulasan.html" class="active">Ulasan</a></li>
+                </ul>
+                <div class="hamburger">☰</div>
+            </nav>
+        </div>
+    </header>
+    <section id="katalog">
+        <div class="container">
+            <h2 class="section-title">Katalog Produk</h2>
+            <div class="categories">
+                <button class="category-btn active" data-category="all">Semua</button>
+                <button class="category-btn" data-category="buket-bunga">Buket Bunga</button>
+                <button class="category-btn" data-category="buket-uang">Buket Uang</button>
+                <button class="category-btn" data-category="buket-snack">Buket Snack</button>
+                <button class="category-btn" data-category="bunga-meja">Bunga Meja</button>
+                <button class="category-btn" data-category="bunga-papan">Bunga Papan</button>
+                <button class="category-btn" data-category="bunga-tangkai">Bunga Tangkai</button>
+                <button class="category-btn" data-category="others">Others</button>
+            </div>
+            <div class="products-grid">
+                <!-- Produk akan diisi oleh JavaScript -->
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-about">
+                    <div class="footer-logo">Diandra.<span>gift</span></div>
+                    <p>Diandra Gift menghadirkan rangkaian bunga terbaik dengan sentuhan elegan dan penuh makna.</p>
+                </div>
+                <div class="footer-links">
+                    <h3>Link Cepat</h3>
+                    <ul>
+                        <li><a href="home.html">Home</a></li>
+                        <li><a href="katalog.html">Katalog</a></li>
+                        <li><a href="search.html">Cari</a></li>
+                        <li><a href="tentang.html">Tentang Kami</a></li>
+                        <li><a href="kontak.html">Kontak</a></li>
+                        <li><a href="ulasan.html" class="active">Ulasan</a></li>
+                    </ul>
+                </div>
+                <div class="footer-contact">
+                    <h3>Kontak</h3>
+                    <p>JL. Desa Sampora, Desa Sampora, Kec. Cilimus, Kab. Kuningan, Jawa Barat</p>
+                    <p>+62 895-3958-35861</p>
+                    <p>@diandra.gift</p>
+                </div>
+            </div>
+            <div class="copyright">
+                <p>&copy; 2026 Diandra.gift </p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Modal Detail Produk -->
+    <div id="productModal" class="modal">
+        <div class="modal-content">
+            <span class="close-modal">&times;</span>
+            <div class="product-detail">
+                <div class="product-detail-image">
+                    <img id="modalImage" src="" alt="Product Image">
+                </div>
+                <div class="product-detail-info">
+                    <h2 id="modalTitle"></h2>
+                    <span id="modalCategory" class="product-category"></span>
+                    <p id="modalDescription"></p>
+                    <div id="modalPrice" class="product-detail-price"></div>
+                    <a href="https://wa.me/6287848520130?text=Saya%20ingin%20memesan%20produk%20dari%20Bloom%20%26%20Love" class="btn order-btn" target="_blank">Pesan Sekarang</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="../js/data.js"></script>
+    <script src="../js/katalog.js"></script>
+    <script src="../js/main.js"></script>
+</body>
+</html>
