@@ -227,7 +227,7 @@ function openProductModal(product) {
     document.getElementById("modalPrice").textContent = product.price;
 
     // WhatsApp order link
-    document.querySelector(".order-btn").href = `https://wa.me/6287848520130?text=${encodeURIComponent(`Halo, saya ingin memesan ${product.name}`)}`;
+    document.querySelector(".order-btn").href = `https://wa.me/62895395835861?text=${encodeURIComponent(`Halo, saya ingin memesan ${product.name}`)}`;
 
     modal.style.display = "flex";
     document.body.style.overflow = "hidden";
