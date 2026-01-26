@@ -55,7 +55,7 @@ function addAdmin() {
 
 function logout() {
   localStorage.removeItem("admin");
-  window.location.href = "../login.html";
+  window.location.href = "login.html";
 }
 
 loadAdmins();
