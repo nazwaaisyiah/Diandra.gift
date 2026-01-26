@@ -1,10 +1,11 @@
-const mapBtn = document.querySelector('.map-btn');
-if (mapBtn) {
-    mapBtn.addEventListener('click', function(e) {
-        e.preventDefault();
-        window.open(
-          'https://maps.app.goo.gl/FxPdjfov4QuwGKYh9?g_st=aw',
-          '_blank'
-        ); 
-    });
-}
+document.addEventListener("DOMContentLoaded", function () {
+    const mapBtn = document.querySelector(".map-btn");
+    const mapContainer = document.getElementById("mapContainer");
+
+    if (mapBtn && mapContainer) {
+        mapBtn.addEventListener("click", function () {
+            mapContainer.style.display =
+                mapContainer.style.display === "block" ? "none" : "block";
+        });
+    }
+});

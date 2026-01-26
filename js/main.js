@@ -58,13 +58,4 @@ document.addEventListener("DOMContentLoaded", () => {
         }
     });
 
-    // Form kontak (aman walau form nggak ada)
-    const contactForm = document.getElementById("contactForm");
-    if (contactForm) {
-        contactForm.addEventListener("submit", e => {
-            e.preventDefault();
-            alert("Pesan terkirim!");
-            e.target.reset();
-        });
-    }
-});
+   
