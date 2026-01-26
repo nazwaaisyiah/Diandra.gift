@@ -822,6 +822,26 @@ footer {
         width: 150px;
     }
 }
+.hero {
+    background:
+      linear-gradient(
+        rgba(255, 255, 255, 0.45),
+        rgba(255, 255, 255, 0.45)
+      ),
+      url("../Assets/bungabg.jpeg");
+
+    background-size: cover;
+    background-position: center;
+    height: 85vh;
+    display: flex;
+    align-items: center;
+    text-align: center;
+}
+
+.hero h1,
+.hero p {
+    color: #2f3438;
+}
 
 #ulasan
 .contact-form {
