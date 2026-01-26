@@ -4,13 +4,27 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Diandra.gift</title>
-    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/style.css" href="css/home.css">
     <script src="js/data.js"></script>
     <script src="js/katalog.js"></script>
     <script src="js/main.js"></script>
-    <script src="js/ulasan.js"></script>
+    <script src="js/ulasan.js" defer></script>
+    <script src="js/home.js"></script>
 </head>
 <body>
+     <!-- pop up bunga -->
+    <div id="bungaOverlay" class="overlay">
+    <div class="popup">
+        <h2>hai, bunga apa yang kamu sukai? 💐</h2>
+
+        <div class="btn-grid">
+        <button onclick="kirimBunga('Mawar')">🌹 Mawar</button>
+        <button onclick="kirimBunga('Tulip')">🌷 Tulip</button>
+        <button onclick="kirimBunga('Melati')">🌼 Melati</button>
+        <button onclick="kirimBunga('Anggrek')">🌸 Anggrek</button>
+        </div>
+    </div>
+    </div>
     <!-- Header & Navigation -->
     <header>
         <div class="container">
@@ -23,11 +37,13 @@
                     <li><a href="sections/about.html">Tentang Kami</a></li>
                     <li><a href="sections/kontak.html">Kontak</a></li>
                     <li><a href="sections/ulasan.html">Ulasan</a></li>
+                    <li><a href="login.html">Login</a></li>
                 </ul>
                 <div class="hamburger">☰</div>
             </nav>
         </div>
     </header>
+</div>
 
     <!-- Hero Section -->
     <section id="home" class="hero">

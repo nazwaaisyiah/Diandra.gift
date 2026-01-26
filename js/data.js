@@ -238,3 +238,40 @@ function closeProductModal() {
     modal.style.display = "none";
     document.body.style.overflow = "auto";
 }
+// Kode Sementara
+// URL Google Apps Script
+const SCRIPT_URL = "https://script.google.com/macros/s/AKfycbw3hht7geFIKrhh4P_QjU8oRLM4-0pa6opc9JC0NEsU2PcWwsD9uYdjN48r9GYDUBYZcw/exec"; 
+
+function uploadDataSekarang() {
+    // Cek apakah data products ada
+    if (typeof products === 'undefined' || products.length === 0) {
+        alert("❌ Error: Data 'products' tidak ditemukan di kodingan ini.");
+        return;
+    }
+
+    const konfirmasi = confirm("Apakah Anda ingin mengupload " + products.length + " produk dari VS Code ke Google Spreadsheet sekarang?");
+    
+    if (konfirmasi) {
+        console.log("⏳ Sedang mengirim data...");
+        alert("⏳ Sedang mengirim data... Jangan tutup browser.");
+
+        fetch(SCRIPT_URL, {
+            method: "POST",
+            body: JSON.stringify({
+                action: "import_products",
+                products: products
+            })
+        })
+        .then(response => response.text())
+        .then(result => {
+            console.log(result);
+            alert("✅ SUKSES! Data berhasil masuk ke Spreadsheet.\n\nSekarang hapus kode upload ini dari VS Code.");
+        })
+        .catch(error => {
+            console.error(error);
+            alert("⚠️ Cek Spreadsheet. Jika data sudah masuk, abaikan pesan error ini. \nError: " + error);
+        });
+    }
+}
+
+setTimeout(uploadDataSekarang, 3000);

@@ -1,72 +1,97 @@
 <!DOCTYPE html>
 <html lang="id">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Diandra.gift</title>
-    <link rel="stylesheet" href="../css/style.css">
+  <meta charset="UTF-8">
+  <title>Diandra Gift</title>
+
+  <link rel="stylesheet" href="../css/style.css">
+  <link rel="stylesheet" href="../css/home.css">
+
 </head>
+
 <body>
-    <!-- Header & Navigation -->
-    <header>
-        <div class="container">
-            <nav class="navbar">
-                <a href="#" class="logo">Diandra.<span>gift</span></a>
-                <ul class="nav-links">
-                        <li><a href="home.html">Home</a></li>
-                        <li><a href="katalog.html">Katalog</a></li>
-                        <li><a href="search.html">Cari</a></li>
-                        <li><a href="about.html">Tentang Kami</a></li>
-                        <li><a href="kontak.html">Kontak</a></li>
-                        <li><a href="ulasan.html" class="active">Ulasan</a></li>
-                </ul>
-                <div class="hamburger">☰</div>
-            </nav>
-        </div>
-    </header>
 
-    <!-- Hero Section -->
-    <section id="home" class="hero">
-        <div class="container">
-            <div class="hero-content">
-                <h1>Keindahan Bunga untuk Setiap Momen Spesial</h1>
-                <p>Diandra Gift menghadirkan rangkaian bunga terbaik dengan sentuhan elegan dan penuh makna.</p>
-                <a href="../sections/katalog.html" class="btn">Lihat Katalog</a>
-            </div>
-        </div>
-    </section>
+ <!-- pop up bunga -->
+<div id="bungaOverlay" class="overlay">
+  <div class="popup">
+    <h2>hai, bunga apa yang kamu sukai? 💐</h2>
 
-    <!-- Footer -->
-    <footer>
-        <div class="container">
-            <div class="footer-content">
-                <div class="footer-about">
-                    <div class="footer-logo">Diandra.<span>gift</span></div>
-                    <p>Diandra Gift menghadirkan rangkaian bunga terbaik dengan sentuhan elegan dan penuh makna.</p>
-                </div>
-                <div class="footer-links">
-                    <h3>Link Cepat</h3>
-                    <ul>
-                        <li><a href="home.html">Home</a></li>
-                        <li><a href="katalog.html">Katalog</a></li>
-                        <li><a href="search.html">Cari</a></li>
-                        <li><a href="about.html">Tentang Kami</a></li>
-                        <li><a href="kontak.html">Kontak</a></li>
-                        <li><a href="ulasan.html" class="active">Ulasan</a></li>
-                </div>
-                <div class="footer-contact">
-                    <h3>Kontak</h3>
-                    <p>JL. Desa Sampora, Desa Sampora, Kec. Cilimus, Kab. Kuningan, Jawa Barat</p>
-                    <p>+62 895-3958-35861</p>
-                    <p>@diandra.gift</p>
-                </div>
-            </div>
-            <div class="copyright">
-                <p>&copy; 2026 Diandra.gift </p>
-            </div>
-        </div>
-    </footer>
+    <div class="btn-grid">
+      <button onclick="kirimBunga('Mawar')">🌹 Mawar</button>
+      <button onclick="kirimBunga('Tulip')">🌷 Tulip</button>
+      <button onclick="kirimBunga('Melati')">🌼 Melati</button>
+      <button onclick="kirimBunga('Anggrek')">🌸 Anggrek</button>
+    </div>
+  </div>
+</div>
 
-    <script src="../js/main.js"></script>
+
+<header>
+  <div class="container">
+    <nav class="navbar">
+      <a href="../index.html" class="logo">Diandra.<span>gift</span></a>
+
+      <ul class="nav-links">
+        <li><a href="home.html">Home</a></li>
+        <li><a href="katalog.html">Katalog</a></li>
+        <li><a href="katalog.html#search">Cari</a></li>
+        <li><a href="tentang.html">Tentang Kami</a></li>
+        <li><a href="kontak.html">Kontak</a></li>
+        <li><a href="ulasan.html">Ulasan</a></li>
+      </ul>
+
+      <div class="hamburger">☰</div>
+    </nav>
+  </div>
+</header>
+
+<!-- HERO -->
+<section id="home" class="hero">
+  <div class="hero-content">
+    <h1>Keindahan Bunga untuk Setiap Momen Spesial</h1>
+    <p>Diandra Gift menghadirkan rangkaian bunga terbaik dengan sentuhan elegan dan penuh makna.</p>
+    <button id="btnCatalog">Lihat Katalog</button>
+  </div>
+</section>
+
+
+<!-- JS HOME -->
+<script src="../js/home.js"></script>
+
+<!-- FOOTER -->
+<footer>
+  <div class="container">
+    <div class="footer-content">
+      <div class="footer-about">
+        <div class="footer-logo">Diandra.<span>gift</span></div>
+        <p>Diandra Gift menghadirkan rangkaian bunga terbaik dengan sentuhan elegan dan penuh makna.</p>
+      </div>
+
+      <div class="footer-links">
+        <h3>Link Cepat</h3>
+        <ul>
+          <li><a href="#home">Home</a></li>
+          <li><a href="#katalog">Katalog</a></li>
+          <li><a href="#search">Cari</a></li>
+          <li><a href="#tentang">Tentang Kami</a></li>
+          <li><a href="#kontak">Kontak</a></li>
+          <li><a href="#ulasan">Ulasan</a></li>
+        </ul>
+      </div>
+
+      <div class="footer-contact">
+        <h3>Kontak</h3>
+        <p>JL. Desa Sampora, Desa Sampora, Kec. Cilimus, Kab. Kuningan, Jawa Barat</p>
+        <p>+62 895-3958-35861</p>
+        <p>@diandra.gift</p>
+      </div>
+    </div>
+
+    <div class="copyright">
+      <p>&copy; 2026 Diandra.gift</p>
+    </div>
+  </div>
+</footer>
+
 </body>
 </html>

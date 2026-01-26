@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Admin Panel</title>
+<link rel="stylesheet" href="css/admin.css">
+</head>
+<body>
+<script>
+if (localStorage.getItem("admin") !== "true") {
+  window.location.href = "login.html";
+}
+</script>
+
+<div class="admin-container">
+  <h1>ADMIN PANEL 🌸</h1>
+  <p>Selamat datang, admin!</p>
+
+  <h2>Kelola Admin</h2>
+  <div class="admin-form">
+    <input type="text" id="newUsername" placeholder="Username baru">
+    <input type="text" id="newPassword" placeholder="Password baru">
+    <button onclick="addAdmin()">Tambah Admin</button>
+    <p id="msgAdd"></p>
+  </div>
+
+  <h2>Daftar Admin</h2>
+  <ul id="adminList">Memuat...</ul>
+
+  <button onclick="logout()">Logout</button>
+</div>
+
+<script src="js/admin.js"></script>
+</body>
+</html>
