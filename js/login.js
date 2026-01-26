@@ -7,6 +7,8 @@ function login(e) {
   const password = document.getElementById("password").value.trim();
   const msg = document.getElementById("msg");
 
+  msg.innerText = "Loading...";
+
   fetch(API_URL, {
     method: "POST",
     headers: {
@@ -21,10 +23,13 @@ function login(e) {
   .then(res => res.json())
   .then(data => {
     if (data.status === "success") {
+      // simpan status login
       localStorage.setItem("admin", "true");
-      window.location.href = "../admin.html";
+
+      // redirect ke admin (FIXED)
+      window.location.href = "admin.html";
     } else {
-      msg.innerText = data.message;
+      msg.innerText = data.message || "Login gagal";
     }
   })
   .catch(() => {
