@@ -25,22 +25,3 @@ function kirimBunga(bunga) {
     body: "bunga=" + encodeURIComponent(bunga)
   });
 }
-
-
-/* == popup biar muncul sekali == */
-document.addEventListener("DOMContentLoaded", function () {
-  const overlay = document.getElementById("bungaOverlay");
-  if (!overlay) return;
-
-  if (localStorage.getItem("bungaDone")) {
-    overlay.style.display = "none";
-  } else {
-    overlay.style.display = "flex";
-  }
-});
-
-/* == buat reset manual == */
-function resetBunga() {
-  localStorage.removeItem("bungaDone");
-  location.reload();
-}
