@@ -5,7 +5,7 @@ const products = [
         name: "Buket Bunga Mawar",
         category: "buket-bunga",
         price: "Rp 250.000",
-        image: "assets/mawarmerah.jpg",
+        image: "Assets/mawarmerah.jpg",
         description: "Buket elegan berisi mawar segar yang sejak zaman Romawi menjadi simbol cinta abadi dan kasih sayang tulus."
     },
     {
@@ -13,7 +13,7 @@ const products = [
         name: "Rangkaian Bunga Meja Anggrek",
         category: "bunga-meja",
         price: "Rp 250.000",
-        image: "assets/mejaanggrek.jpg",
+        image: "Assets/mejaanggrek.jpg",
         description: "Rangkaian anggrek eksotis yang sejak dahulu dikenal di Asia Tenggara sebagai lambang keanggunan dan kemewahan alami."
     },
     {
@@ -21,7 +21,7 @@ const products = [
         name: "Ucapan Papan Bunga Bahagia",
         category: "bunga-papan",
         price: "Rp 1.500.000",
-        image: "assets/papanselamat.jpg",
+        image: "Assets/papanselamat.jpg",
         description: "Papan bunga penuh warna khas tradisi Indonesia untuk menyampaikan ucapan selamat pada momen bahagia."
     },
     {
@@ -29,7 +29,7 @@ const products = [
         name: "Buket Uang Ukuran L",
         category: "buket-uang",
         price: "Rp 200.000",
-        image: "assets/bucketuang.jpg",
+        image: "Assets/bucketuang.jpg",
         description: "Buket uang bernilai tinggi yang populer sejak 2010-an sebagai hadiah modern dan berkesan mewah."
     },
     {
@@ -37,7 +37,7 @@ const products = [
         name: "Rangkaian Bunga Meja Mawar",
         category: "bunga-meja",
         price: "Rp 180.000",
-        image: "assets/mejamawar.jpg",
+        image: "Assets/mejamawar.jpg",
         description: "Kombinasi mawar segar dalam vas elegan yang sejak lama digunakan di Eropa sebagai simbol cinta dan keindahan."
     },
     {
@@ -45,7 +45,7 @@ const products = [
         name: "Ucapan Papan Bunga Duka",
         category: "bunga-papan",
         price: "Rp 1.200.000",
-        image: "assets/duka.jpg",
+        image: "Assets/duka.jpg",
         description: "Papan bunga bernuansa lembut sebagai bentuk penghormatan terakhir, mengikuti tradisi belasungkawa yang telah ada berabad-abad."
     },
     {
@@ -53,7 +53,7 @@ const products = [
         name: "Buket Snack Ukuran M",
         category: "buket-snack",
         price: "Rp 100.000",
-        image: "assets/snack.jpg",
+        image: "Assets/snack.jpg",
         description: "Buket unik berisi aneka snack kekinian yang populer di media sosial karena tampilannya yang lucu dan praktis."
     },
     {
@@ -61,7 +61,7 @@ const products = [
         name: "Rangkaian Bunga Meja Melati",
         category: "bunga-meja",
         price: "Rp 220.000",
-        image: "assets/mejamelati.jpg",
+        image: "Assets/mejamelati.jpg",
         description: "Rangkaian melati harum yang sejak lama menjadi bunga nasional Indonesia, simbol kesucian dan ketulusan."
     },
     {
@@ -69,7 +69,7 @@ const products = [
         name: "Papan Bunga Wisuda",
         category: "bunga-papan",
         price: "Rp 500.000",
-        image: "assets/wisuda.jpg",
+        image: "Assets/wisuda.jpg",
         description: "Papan bunga ceria untuk ucapan selamat kelulusan yang berasal dari tradisi ucapan akademik khas Indonesia."
     },
     {
@@ -77,7 +77,7 @@ const products = [
         name: "Bunga Mawar Tangkai",
         category: "bunga-tangkai",
         price: "Rp 50.000",
-        image: "assets/tangkaimawar.jpg",
+        image: "Assets/tangkaimawar.jpg",
         description: "Satu tangkai mawar segar yang sejak dulu digunakan sebagai simbol cinta murni dan penghargaan."
     },
     {
@@ -85,7 +85,7 @@ const products = [
         name: "Buket Bunga Ungu",
         category: "buket-bunga",
         price: "Rp 250.000",
-        image: "assets/buketbungaungu.jpg",
+        image: "Assets/buketbungaungu.jpg",
         description: "Buket bernuansa ungu yang melambangkan kemewahan dan spiritualitas, warna kebangsawanan sejak zaman kuno."
     },
     {
@@ -93,7 +93,7 @@ const products = [
         name: "Buket Uang Ukuran M",
         category: "buket-uang",
         price: "Rp 200.000",
-        image: "assets/buketuang50.jpg",
+        image: "Assets/buketuang50.jpg",
         description: "Buket uang menawan ukuran sedang yang muncul dari tren menggabungkan estetika bunga dengan hadiah tunai praktis."
     },
     {
@@ -101,7 +101,7 @@ const products = [
         name: "Buket Bunga Mini",
         category: "buket-bunga",
         price: "Rp 150.000",
-        image: "assets/buketbunga1.jpg",
+        image: "Assets/buketbunga1.jpg",
         description: "Buket kecil nan manis yang terinspirasi dari budaya Jepang sebagai simbol kesederhanaan dan keindahan alami."
     },
     {
@@ -109,7 +109,7 @@ const products = [
         name: "Buket Bunga Gold",
         category: "buket-bunga",
         price: "Rp 250.000",
-        image: "assets/buketbunga2.jpg",
+        image: "Assets/buketbunga2.jpg",
         description: "Buket bernuansa emas yang memberi kesan glamor dan melambangkan kemakmuran dalam budaya Timur."
     },
     {
@@ -117,7 +117,7 @@ const products = [
         name: "Buket Uang Ukuran S",
         category: "buket-uang",
         price: "Rp 200.000",
-        image: "assets/buketuangS.jpg",
+        image: "Assets/buketuangS.jpg",
         description: "Buket uang kecil elegan yang diciptakan untuk hadiah personal bernilai simbolis namun tetap indah."
     },
     {
@@ -125,7 +125,7 @@ const products = [
         name: "Buket Bunga Nuansa Biru",
         category: "buket-bunga",
         price: "Rp 250.000",
-        image: "assets/buketbunga3.jpg",
+        image: "Assets/buketbunga3.jpg",
         description: "Buket uang bertema biru yang mencerminkan ketenangan dan menjadi tren modern di kalangan muda."
     },
     {
@@ -133,7 +133,7 @@ const products = [
         name: "Buket Bunga Blossom",
         category: "buket-bunga",
         price: "Rp 250.000",
-        image: "assets/buketbunga4.jpg",
+        image: "Assets/buketbunga4.jpg",
         description: "Buket bunga pastel terinspirasi bunga sakura Jepang yang melambangkan harapan dan awal baru."
     },
     {
@@ -141,7 +141,7 @@ const products = [
         name: "Buket Snack Ukuran L",
         category: "buket-snack",
         price: "Rp 100.000",
-        image: "assets/buketsnack1.jpg",
+        image: "Assets/buketsnack1.jpg",
         description: "Buket besar berisi berbagai camilan favorit yang lahir dari tren hadiah estetik dan penuh kejutan."
     },
     {
@@ -149,7 +149,7 @@ const products = [
         name: "Buket Ballon",
         category: "others",
         price: "Rp 100.000",
-        image: "assets/buketbalon.jpg",
+        image: "Assets/buketbalon.jpg",
         description: "Kombinasi balon dan bunga yang populer di Korea sebagai hadiah ceria dan fotogenik untuk perayaan spesial."
     },
     {
@@ -157,7 +157,7 @@ const products = [
         name: "Hand Bouquet",
         category: "others",
         price: "Rp 100.000",
-        image: "assets/handbuket.jpg",
+        image: "Assets/handbuket.jpg",
         description: "Buket bunga genggam klasik yang berasal dari tradisi pernikahan Eropa, simbol kebahagiaan dan kesetiaan."
     },
     {
@@ -165,7 +165,7 @@ const products = [
         name: "Vas Bunga",
         category: "others",
         price: "Rp 100.000",
-        image: "assets/vas.jpg",
+        image: "Assets/vas.jpg",
         description: "Vas elegan untuk mempercantik ruangan, digunakan sejak zaman Mesir kuno sebagai simbol keindahan dan status."
     },
 ];
