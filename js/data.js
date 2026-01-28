@@ -1,3 +1,4 @@
+let products = [];
 // Data Rekomendasi berdasarkan momen
 const rekomendasiMomen = {
     'wisuda': {

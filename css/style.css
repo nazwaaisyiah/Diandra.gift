@@ -59,7 +59,6 @@ img {
 /* ===== HERO ===== */
 .hero {
     height: 100vh;
-    background-image: url("../assets/bungabg.jpeg");
     background-size: cover;
     background-position: center;
     display: flex;

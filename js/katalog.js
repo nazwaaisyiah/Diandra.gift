@@ -1,4 +1,26 @@
 // katalog.js
+window.displayProducts = function (data) {
+  if (!Array.isArray(data)) return;
+
+  products = data;
+
+  const container = document.querySelector(".products-container");
+  if (!container) return;
+
+  container.innerHTML = "";
+
+  data.forEach(product => {
+    const card = document.createElement("div");
+    card.className = "product-card";
+    card.innerHTML = `
+      <img src="${product.image}">
+      <h3>${product.name}</h3>
+      <p>${product.price}</p>
+    `;
+    container.appendChild(card);
+  });
+};
+
 // Fungsi displayProducts dibuat global agar bisa dipanggil dari data.js
 window.displayProducts = function(list = products) {
     const grid = document.querySelector(".products-grid");
