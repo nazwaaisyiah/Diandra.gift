@@ -1,176 +1,3 @@
-// Data Produk
-const products = [
-    {
-        id: 1,
-        name: "Buket Bunga Mawar",
-        category: "buket-bunga",
-        price: "Rp 250.000",
-        image: "../Assets/mawarmerah.jpg",
-        description: "Buket elegan berisi mawar segar yang sejak zaman Romawi menjadi simbol cinta abadi dan kasih sayang tulus."
-    },
-    {
-        id: 2,
-        name: "Rangkaian Bunga Meja Anggrek",
-        category: "bunga-meja",
-        price: "Rp 250.000",
-        image: "../Assets/mejaanggrek.jpg",
-        description: "Rangkaian anggrek eksotis yang sejak dahulu dikenal di Asia Tenggara sebagai lambang keanggunan dan kemewahan alami."
-    },
-    {
-        id: 3,
-        name: "Ucapan Papan Bunga Bahagia",
-        category: "bunga-papan",
-        price: "Rp 1.500.000",
-        image: "../Assets/papanselamat.jpg",
-        description: "Papan bunga penuh warna khas tradisi Indonesia untuk menyampaikan ucapan selamat pada momen bahagia."
-    },
-    {
-        id: 4,
-        name: "Buket Uang Ukuran L",
-        category: "buket-uang",
-        price: "Rp 200.000",
-        image: "../Assets/bucketuang.jpg",
-        description: "Buket uang bernilai tinggi yang populer sejak 2010-an sebagai hadiah modern dan berkesan mewah."
-    },
-    {
-        id: 5,
-        name: "Rangkaian Bunga Meja Mawar",
-        category: "bunga-meja",
-        price: "Rp 180.000",
-        image: "../Assets/mejamawar.jpg",
-        description: "Kombinasi mawar segar dalam vas elegan yang sejak lama digunakan di Eropa sebagai simbol cinta dan keindahan."
-    },
-    {
-        id: 6,
-        name: "Ucapan Papan Bunga Duka",
-        category: "bunga-papan",
-        price: "Rp 1.200.000",
-        image: "../Assets/duka.jpg",
-        description: "Papan bunga bernuansa lembut sebagai bentuk penghormatan terakhir, mengikuti tradisi belasungkawa yang telah ada berabad-abad."
-    },
-    {
-        id: 7,
-        name: "Buket Snack Ukuran M",
-        category: "buket-snack",
-        price: "Rp 100.000",
-        image: "../Assets/snack.jpg",
-        description: "Buket unik berisi aneka snack kekinian yang populer di media sosial karena tampilannya yang lucu dan praktis."
-    },
-    {
-        id: 8,
-        name: "Rangkaian Bunga Meja Melati",
-        category: "bunga-meja",
-        price: "Rp 220.000",
-        image: "../Assets/mejamelati.jpg",
-        description: "Rangkaian melati harum yang sejak lama menjadi bunga nasional Indonesia, simbol kesucian dan ketulusan."
-    },
-    {
-        id: 9,
-        name: "Papan Bunga Wisuda",
-        category: "bunga-papan",
-        price: "Rp 500.000",
-        image: "../Assets/wisuda.jpg",
-        description: "Papan bunga ceria untuk ucapan selamat kelulusan yang berasal dari tradisi ucapan akademik khas Indonesia."
-    },
-    {
-        id: 10,
-        name: "Bunga Mawar Tangkai",
-        category: "bunga-tangkai",
-        price: "Rp 50.000",
-        image: "../Assets/tangkaimawar.jpg",
-        description: "Satu tangkai mawar segar yang sejak dulu digunakan sebagai simbol cinta murni dan penghargaan."
-    },
-    {
-        id: 11,
-        name: "Buket Bunga Ungu",
-        category: "buket-bunga",
-        price: "Rp 250.000",
-        image: "../Assets/buketbungaungu.jpg",
-        description: "Buket bernuansa ungu yang melambangkan kemewahan dan spiritualitas, warna kebangsawanan sejak zaman kuno."
-    },
-    {
-        id: 12,
-        name: "Buket Uang Ukuran M",
-        category: "buket-uang",
-        price: "Rp 200.000",
-        image: "../Assets/buketuang50.jpg",
-        description: "Buket uang menawan ukuran sedang yang muncul dari tren menggabungkan estetika bunga dengan hadiah tunai praktis."
-    },
-    {
-        id: 13,
-        name: "Buket Bunga Mini",
-        category: "buket-bunga",
-        price: "Rp 150.000",
-        image: "../Assets/buketbunga1.jpg",
-        description: "Buket kecil nan manis yang terinspirasi dari budaya Jepang sebagai simbol kesederhanaan dan keindahan alami."
-    },
-    {
-        id: 14,
-        name: "Buket Bunga Gold",
-        category: "buket-bunga",
-        price: "Rp 250.000",
-        image: "../Assets/buketbunga2.jpg",
-        description: "Buket bernuansa emas yang memberi kesan glamor dan melambangkan kemakmuran dalam budaya Timur."
-    },
-    {
-        id: 15,
-        name: "Buket Uang Ukuran S",
-        category: "buket-uang",
-        price: "Rp 200.000",
-        image: "../Assets/buketuangS.jpg",
-        description: "Buket uang kecil elegan yang diciptakan untuk hadiah personal bernilai simbolis namun tetap indah."
-    },
-    {
-        id: 16,
-        name: "Buket Bunga Nuansa Biru",
-        category: "buket-bunga",
-        price: "Rp 250.000",
-        image: "../Assets/buketbunga3.jpg",
-        description: "Buket uang bertema biru yang mencerminkan ketenangan dan menjadi tren modern di kalangan muda."
-    },
-    {
-        id: 17,
-        name: "Buket Bunga Blossom",
-        category: "buket-bunga",
-        price: "Rp 250.000",
-        image: "../Assets/buketbunga4.jpg",
-        description: "Buket bunga pastel terinspirasi bunga sakura Jepang yang melambangkan harapan dan awal baru."
-    },
-    {
-        id: 18,
-        name: "Buket Snack Ukuran L",
-        category: "buket-snack",
-        price: "Rp 100.000",
-        image: "../Assets/buketsnack1.jpg",
-        description: "Buket besar berisi berbagai camilan favorit yang lahir dari tren hadiah estetik dan penuh kejutan."
-    },
-    {
-        id: 19,
-        name: "Buket Ballon",
-        category: "others",
-        price: "Rp 100.000",
-        image: "../Assets/buketbalon.jpg",
-        description: "Kombinasi balon dan bunga yang populer di Korea sebagai hadiah ceria dan fotogenik untuk perayaan spesial."
-    },
-    {
-        id: 20,
-        name: "Hand Bouquet",
-        category: "others",
-        price: "Rp 100.000",
-        image: "../Assets/handbuket.jpg",
-        description: "Buket bunga genggam klasik yang berasal dari tradisi pernikahan Eropa, simbol kebahagiaan dan kesetiaan."
-    },
-    {
-        id: 21,
-        name: "Vas Bunga",
-        category: "others",
-        price: "Rp 100.000",
-        image: "../Assets/vas.jpg",
-        description: "Vas elegan untuk mempercantik ruangan, digunakan sejak zaman Mesir kuno sebagai simbol keindahan dan status."
-    },
-];
-
-
 // Data Rekomendasi berdasarkan momen
 const rekomendasiMomen = {
     'wisuda': {
@@ -225,6 +52,7 @@ function openProductModal(product) {
     document.getElementById("modalCategory").textContent = formatCategory(product.category);
     document.getElementById("modalDescription").textContent = product.description;
     document.getElementById("modalPrice").textContent = product.price;
+    
 
     // WhatsApp order link
     document.querySelector(".order-btn").href = `https://wa.me/62895395835861?text=${encodeURIComponent(`Halo, saya ingin memesan ${product.name}`)}`;
@@ -238,40 +66,85 @@ function closeProductModal() {
     modal.style.display = "none";
     document.body.style.overflow = "auto";
 }
-// Kode Sementara
-// URL Google Apps Script
-const SCRIPT_URL = "https://script.google.com/macros/s/AKfycbw3hht7geFIKrhh4P_QjU8oRLM4-0pa6opc9JC0NEsU2PcWwsD9uYdjN48r9GYDUBYZcw/exec"; 
 
-function uploadDataSekarang() {
-    // Cek apakah data products ada
-    if (typeof products === 'undefined' || products.length === 0) {
-        alert("❌ Error: Data 'products' tidak ditemukan di kodingan ini.");
+function renderProducts(data) {
+    if (window.displayProducts) {
+        window.displayProducts(data);
         return;
     }
-
-    const konfirmasi = confirm("Apakah Anda ingin mengupload " + products.length + " produk dari VS Code ke Google Spreadsheet sekarang?");
     
-    if (konfirmasi) {
-        console.log("⏳ Sedang mengirim data...");
-        alert("⏳ Sedang mengirim data... Jangan tutup browser.");
+    // Fallback if displayProducts (from katalog.js) is not available
+    const container = document.querySelector(".products-container");
+    if (!container) return;
 
-        fetch(SCRIPT_URL, {
-            method: "POST",
-            body: JSON.stringify({
-                action: "import_products",
-                products: products
-            })
-        })
-        .then(response => response.text())
-        .then(result => {
-            console.log(result);
-            alert("✅ SUKSES! Data berhasil masuk ke Spreadsheet.\n\nSekarang hapus kode upload ini dari VS Code.");
-        })
-        .catch(error => {
-            console.error(error);
-            alert("⚠️ Cek Spreadsheet. Jika data sudah masuk, abaikan pesan error ini. \nError: " + error);
-        });
-    }
+    container.innerHTML = "";
+
+    data.forEach(product => {
+        const card = document.createElement("div");
+        card.className = "product-card";
+        card.innerHTML = `
+            <div class="product-image"><img src="${product.image}" alt="${product.name}"></div>
+            <div class="product-info">
+                <span class="product-category">${formatCategory(product.category)}</span>
+                <h3>${product.name}</h3>
+                <div class="product-price">${product.price}</div>
+            </div>
+        `;
+        card.addEventListener("click", () => openProductModal(product));
+        container.appendChild(card);
+    });
 }
 
-setTimeout(uploadDataSekarang, 3000);
+
+
+// URL Google Apps Script
+const SCRIPT_URL = "https://script.google.com/macros/s/AKfycbx9Ba6hKchUOdxlySkva_atm3CyYo2jwJaBFj40CTac_9ejN2VulX2QGcSbWiAZVo4/exec"; 
+
+function convertGoogleDriveLink(url) {
+    try {
+        if (!url) return url;
+        if (url.includes("drive.google.com")) {
+            let id = "";
+            // Pattern 1: /file/d/ID/
+            const match1 = url.match(/\/d\/([a-zA-Z0-9_-]+)/);
+            if (match1) {
+                id = match1[1];
+            } else {
+                // Pattern 2: id=ID
+                const match2 = url.match(/id=([a-zA-Z0-9_-]+)/);
+                if (match2) {
+                    id = match2[1];
+                }
+            }
+            
+            if (id) {
+                // Menggunakan format thumbnail yang lebih stabil untuk gambar publik/share link
+                return `https://drive.google.com/thumbnail?id=${id}&sz=w1000`;
+            }
+        }
+    } catch (e) {
+        console.error("Error converting Drive link:", e);
+    }
+    return url;
+}
+
+function loadProductsFromSpreadsheet() {
+    fetch(SCRIPT_URL)
+        .then(res => res.json())
+        .then(data => {
+            console.log("✅ Data dari Spreadsheet:", data);
+            products = data.map(p => ({
+                ...p,
+                image: convertGoogleDriveLink(p.image)
+            }));
+            renderProducts(products); 
+        })
+        .catch(err => {
+            console.error("❌ Gagal ambil data:", err);
+            alert("Gagal mengambil data dari Spreadsheet");
+        });
+}
+
+document.addEventListener("DOMContentLoaded", function () {
+    loadProductsFromSpreadsheet();
+});

@@ -58,4 +58,116 @@ document.addEventListener("DOMContentLoaded", () => {
         }
     });
 });
+/* =========================
+   SEARCH & MODAL FIX
+   ========================= */
+
+document.addEventListener("DOMContentLoaded", () => {
+  const searchInput = document.getElementById("searchInput");
+  const searchBtn = document.getElementById("searchBtn");
+
+  if (searchBtn && searchInput) {
+    searchBtn.addEventListener("click", () => {
+      searchByKeyword(searchInput.value);
+    });
+
+    searchInput.addEventListener("keypress", (e) => {
+      if (e.key === "Enter") {
+        e.preventDefault();
+        searchByKeyword(searchInput.value);
+      }
+    });
+  }
+
+  // Modal close
+  const modal = document.getElementById("productModal");
+  const closeBtn = document.querySelector(".close-modal");
+
+  if (closeBtn) {
+    closeBtn.addEventListener("click", closeProductModal);
+  }
+
+  window.addEventListener("click", (e) => {
+    if (e.target === modal) {
+      closeProductModal();
+    }
+  });
+
+  document.addEventListener("keydown", (e) => {
+    if (e.key === "Escape") {
+      closeProductModal();
+    }
+  });
+});
+
+/* =========================
+   SEARCH FUNCTION
+   ========================= */
+
+function searchByKeyword(keyword) {
+  keyword = keyword.toLowerCase().trim();
+  const container = document.querySelector(".search-results");
+  container.innerHTML = "";
+
+  // CEK MOMEN
+  if (rekomendasiMomen[keyword]) {
+    const rekom = rekomendasiMomen[keyword];
+    const hasil = products.filter(p =>
+      rekom.products.includes(Number(p.id))
+    );
+    tampilkanHasilSearch(hasil, rekom);
+    return;
+  }
+
+  // SEARCH NORMAL
+  const hasil = products.filter(p =>
+    p.name.toLowerCase().includes(keyword) ||
+    p.description.toLowerCase().includes(keyword) ||
+    p.category.toLowerCase().includes(keyword)
+  );
+
+  tampilkanHasilSearch(hasil);
+}
+
+/* =========================
+   RENDER HASIL SEARCH
+   ========================= */
+
+function tampilkanHasilSearch(data, momen = null) {
+  const container = document.querySelector(".search-results");
+  container.innerHTML = "";
+
+  if (data.length === 0) {
+    container.innerHTML = "<p>Tidak ada rekomendasi 😢</p>";
+    return;
+  }
+
+  if (momen) {
+    container.innerHTML += `
+      <div class="search-moment">
+        <h3>${momen.icon} ${momen.title}</h3>
+        <p>${momen.description}</p>
+      </div>
+    `;
+  }
+
+  data.forEach(product => {
+    const card = document.createElement("div");
+    card.className = "search-result-card";
+
+    card.innerHTML = `
+      <img src="${product.image}">
+      <h4>${product.name}</h4>
+      <p>${product.description}</p>
+      <span class="price">${product.price}</span>
+    `;
+
+    card.addEventListener("click", () => {
+      openProductModal(product);
+    });
+
+    container.appendChild(card);
+  });
+}
+
    
